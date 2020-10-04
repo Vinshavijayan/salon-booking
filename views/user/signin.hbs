@@ -1,0 +1,120 @@
+<!-- ======= Header/ Navbar ======= -->
+
+<nav class="navbar navbar-b navbar-expand-md fixed-top navbar-reduce" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top">Salon<br>Booking</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll active" href="user/assistants">Assistants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="user/calender">Calender</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="user/account">Account</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ======= Counter Section ======= -->
+
+
+<!-- ======= Contact Section ======= -->
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(images/beauty.png)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="contact-mf">
+                    <div id="contact" class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        BOOK AN APPOINTMENT
+                                    </h5>
+                                    <br>
+                                    <h5>RETURNING CUSTOMER? PLEASE, SIGN IN.</h5>
+                                    <br>
+
+                                </div>
+                                <div>
+                                    {{#if hasError}}
+                                    <div class="alert alert-danger">
+                                        {{#each message}}
+                                        <p>{{this}}</p>
+                                        {{/each}}
+                                    </div>
+                                    {{/if}}
+
+                                    <div class="col-md-12">
+
+                                        <div>
+                                            <form action="/user/signin" method="post">
+                                                
+                                                <div class="row">
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group">
+                                                            <label for="email">Email</label>
+
+                                                            <input type="email" class="form-control" name="email"
+                                                                id="email" placeholder="email" 
+                                                              />
+                                                            <div class="validate"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group">
+                                                            <label for="subject">Password</label>
+
+                                                            <input type="password" class="form-control" name="password"
+                                                                id="password" placeholder="******" 
+                                                                />
+                                                            <div class="validate"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 text-center">
+                                                <input type="hidden" value="{{csrfToken}}" name="_csrf">
+                                                <button class="btn btn-primary" type="submit" >LOG IN</button>
+                                            </div>
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <p>NEW CUSTOMER? <a href="/user/signup">CREATE YOUR ACCOUNT.</a></p>
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section><!-- End Contact Section -->

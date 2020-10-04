@@ -1,0 +1,128 @@
+ <!-- ======= Header/ Navbar ======= -->
+  
+    <nav class="navbar navbar-b navbar-expand-md fixed-top navbar-reduce" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Salon<br>Booking</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="/user/assistants">Assistants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/user/calender">Calender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/user/account">Account</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<!-- ======= Counter Section ======= -->
+
+
+<section class="portfolio-details">
+  <div class="container">
+
+
+    <div class="portfolio-description">
+      <h2>Welcome back Vinsha!</h2>
+    </div>
+
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+              Account Details
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="/user/account">Next appointment</a>
+              <a class="dropdown-item" href="/user/reservation">Reservation history</a>
+              <a class="dropdown-item" href="#">Update your profile</a>
+              <a class="dropdown-item" href="/">Logout</a>
+          </div>
+      </div>
+
+</section><!-- End Portfolio Details Section -->
+
+<!-- ======= Contact Section ======= -->
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(images/beauty.png)">
+  <div class="overlay-mf"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="contact-mf">
+          <div id="contact" class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Update your profile
+                  </h5>
+                </div>
+                <div>
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                           <label for="email">Name</label>
+
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+
+                          <input type="email" class="form-control" name="email" id="email" placeholder="email"
+                            data-rule="email" data-msg="Please enter a valid email" />
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                           <label for="email">Password</label>
+
+                          <input type="text" class="form-control" name="mobile" id="password" placeholder="Mobile"
+                            data-rule="minlen:10" data-msg="Please enter 10 numbers" />
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                           <label for="email">Mobile</label>
+
+                          <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile"
+                            data-rule="minlen:10" data-msg="Please enter 10 numbers" />
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 text-center">
+                        <a class="btn btn-primary" href="/user/account" role="button">Update</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Contact Section -->
